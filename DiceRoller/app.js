@@ -10,6 +10,8 @@ function rollDice() {
        values.push(value);
        diceImgs.push(`<img src="images/${value}.png" >`)
     }
-     console.log(values);
+     
+    result.textContent= `Dice Result: ${values.join(", ")}`;
+    resultImgs.innerHTML= diceImgs.join('');
 }
 
